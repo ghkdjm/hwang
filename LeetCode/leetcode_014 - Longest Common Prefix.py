@@ -10,3 +10,12 @@ def longestCommonPrefix(strs):
         else: break
     result = "".join(result)
     return result
+
+#Description
+#Write a function to find the longest common prefix string amongst an array of strings.
+#If there is no common prefix, return an empty string "".
+
+#Solution
+#str으로 구성된 list를 sorted를 통해 배열하면 사전순으로 배열됨(*소문자보다 대문자가 앞으로 옴(A...Za...z))
+#정렬된 strs의 첫 원소와 마지막 원소만 비교하면 답을 구할 수 있음
+#한 글자씩 비교하여 답을 반환함
