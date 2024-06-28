@@ -100,6 +100,3 @@ def quadratic_residue(m):
     for i in reduced_residue_system(m):
         result.add(pow(i, 2, m))
     return result
-
-print(quadratic_residue(11
-                        ))
