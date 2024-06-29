@@ -7,7 +7,7 @@ def gcd(a, b):
 def lcm(a, b):
     return a*b//gcd(a, b)
 
-#최대공배수
+#최대공약수
 def gcds(nums):
     result = nums[0]
     for num in nums[1:]:
