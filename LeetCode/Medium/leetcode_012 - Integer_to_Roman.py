@@ -23,7 +23,7 @@ class Solution:
 #Given an integer, convert it to a Roman numeral.
 
 #Solution
-#주어진 조건에 맞게 dictionary를 생성하고, {0:''}도 추가한다
-#1000의 자리부터 100, 10, 1의자리 순으로 계산한다
-#그 자리 수가 4 또는 9이면 dic[i] + dic[(digit + 1)*i]를 추가하도록 한다
-#나머지 경우에는 5 이상일 때를 고려하여 dic[(digit//5)*5*i] + dic[i] * (digit % 5)를 추가한다
+#주어진 조건에 맞게 dictionary를 생성하고, {0:''}도 추가함
+#1000의 자리부터 100, 10, 1의자리 순으로 계산함
+#그 자리 수가 4 또는 9이면 dic[i] + dic[(digit + 1)*i]를 추가함
+#나머지 경우에는 5 이상일 때를 고려하여 dic[(digit//5)*5*i] + dic[i] * (digit % 5)를 추가함
