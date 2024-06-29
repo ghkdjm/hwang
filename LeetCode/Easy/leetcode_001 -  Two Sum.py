@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         for i in range(len(nums)):
             a = target - nums[i]
             if a in nums:
@@ -13,3 +13,4 @@ class Solution:
 
 #Solution
 #nums를 1번 순회하며 합이 target이 되는 두 수의 index를 찾아 반환함
+#target - nums[i]가 nums에 있어도 그 수가 nums[i]와 같은 수일 수 있으므로 6번째 줄의 조건도 필요함. ex)target = 6, nums = [3, 2, 4] --> 3 + 3 = 6
