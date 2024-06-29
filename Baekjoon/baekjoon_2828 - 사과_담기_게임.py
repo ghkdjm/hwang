@@ -6,9 +6,7 @@ move = 0
 last = M
 for i in range(J):
     first = last - M + 1
-    if first <= apple[i] <= last:
-        continue
-    elif apple[i] < first:
+    if apple[i] < first:
         move += first - apple[i]
         last = apple[i] + M - 1
     elif apple[i] > last:
