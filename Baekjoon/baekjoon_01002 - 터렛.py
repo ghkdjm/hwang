@@ -7,7 +7,7 @@ def cases(x1, y1, r1, x2, y2, r2):
     elif minus < distance < plus: return 2
     else: return 0
 
-for _ in range(int(input())):
+for _ in range(T := int(input())):
     x1, y1, r1, x2, y2, r2 = map(int,input().split())
     print(cases(x1, y1, r1, x2, y2, r2))
 
