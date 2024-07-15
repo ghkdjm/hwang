@@ -46,8 +46,7 @@ print(sum(range(1, (n := int(input()))+1)))
 #재귀 함수 사용
 '''
 def sum_recursive(n):
-    if n == 1:
-        return 1
+    if n == 1: return 1
     else: return n + sum_recursive(n-1)
 
 print(sum_recursive(n := int(input())))
