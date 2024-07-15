@@ -2,7 +2,7 @@ def inside(x, y, cx, cy, r):
     distance = (x - cx)**2 + (y - cy)**2
     return distance < r**2
 
-for _ in range(int(input())):
+for _ in range(T := int(input())):
     x1, y1, x2, y2 = map(int, input().split())
     count = 0
     for _ in range(int(input())):
