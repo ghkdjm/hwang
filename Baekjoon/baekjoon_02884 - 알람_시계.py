@@ -35,10 +35,8 @@ print(H, M)
 '''
 
 #조건문을 사용하지 않은 답
-'''
 H, M = map(int, input().split())
 time = H * 60 + M
 time -= 45
 time = (1440 + time) % 1440
 print(time//60, time % 60)
-'''
