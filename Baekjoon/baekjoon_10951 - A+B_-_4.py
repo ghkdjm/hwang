@@ -26,5 +26,5 @@ A, B를 입력받고 A+B를 출력하고, error가 발생하면 중단함
 #Solution
 '''
 while 문을 사용하여 반복해서 A, B를 입력받고 A+B를 출력함
-try - except 문을 사용하여 error가 발생하면 break를 통해 while 문을 중단함
+try-except 문을 사용하여 error가 발생하면 break를 통해 while 문을 중단함
 '''
