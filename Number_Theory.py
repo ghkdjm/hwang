@@ -1,11 +1,12 @@
 #두 수의 최대공약수
 def gcd(a, b):
-    while b: a, b = b, a%b
+    while b:
+        a, b = b, a % b
     return a
 
 #두 수의 최소공배수
 def lcm(a, b):
-    return a*b//gcd(a, b)
+    return (a * b)//gcd(a, b)
 
 #최대공약수
 def gcds(nums):
@@ -24,7 +25,7 @@ def lcms(nums):
 #소인수
 def prime_factor(n):
     result = []
-    for i in range(2,int(n**0.5)+1):
+    for i in range(2, int(n**0.5) + 1):
         while n % i == 0:
             result.append(i)
             n //= i
@@ -47,14 +48,14 @@ def prime_factorization(n):
 def phi(m):
     result = m
     for num in set(prime_factor(m)):
-        result *= (num-1)
+        result *= (num - 1)
         result //= num
     return result
 
 #약수
 def factor(n):
     result = []
-    for i in range(2,n+1):
+    for i in range(2, n+1):
         if n % i == 0:
             result.append(i)
     return result
@@ -74,7 +75,7 @@ def orders(a, b, m):
 #기약잉여계
 def reduced_residue_system(m):
     result = []
-    for i in range(1,m):
+    for i in range(1, m):
         if gcd(i, m) == 1: result.append(i)
     return result
 
