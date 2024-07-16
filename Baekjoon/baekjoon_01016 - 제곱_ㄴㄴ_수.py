@@ -1,5 +1,4 @@
 m, M = map(int, input().split())
-
 lst = [1] * (M - m + 1)
 i = 2
 while i**2 <= M:
@@ -8,7 +7,6 @@ while i**2 <= M:
         lst[j - m] = 0
     i += 1
 count = sum(lst)
-
 print(count)
 
 #Description
