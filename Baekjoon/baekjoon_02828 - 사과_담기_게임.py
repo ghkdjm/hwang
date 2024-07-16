@@ -1,7 +1,6 @@
 N, M = map(int, input().split())
 J = int(input())
 apple = [int(input()) for _ in range(J)]
-
 move = 0
 last = M
 for i in range(J):
@@ -12,7 +11,6 @@ for i in range(J):
     elif apple[i] > last:
         move += apple[i] - last
         last = apple[i]
-
 print(move)
 
 #Description
