@@ -31,11 +31,9 @@ B에 C를 더한 값이 60 이상이면 B + C를 60으로 나눈 몫을 A에 더
 '''
 
 #조건문을 사용하지 않은 답
-'''
 A, B = map(int,input().split())
 C =  int(input())
 time = A * 60 + B + C
 H = (time//60) % 24
 M = time % 60
 print(H, M)
-'''
