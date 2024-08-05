@@ -22,7 +22,7 @@ ex)target = 6, nums = [3, 2, 4] --> 3 + 3 = 6
 
 #정수값:인덱스로 dict를 만들어 답 구하는 방법
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         dic = {}
         for i in range(len(nums)):
             val = target - nums[i]
