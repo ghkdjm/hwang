@@ -1,13 +1,13 @@
 class Solution:
     def majorityElement(self, nums: list[int]) -> int:
         n = len(nums)
-        hash = {}
+        cnt = {}
         for num in nums:
-            if num in hash:
-                hash[num] += 1
+            if num in cnt:
+                cnt[num] += 1
             else:
-                hash[num] = 1
-            if hash[num] > n//2:
+                cnt[num] = 1
+            if cnt[num] > n//2:
                 return num
             
 #Description
